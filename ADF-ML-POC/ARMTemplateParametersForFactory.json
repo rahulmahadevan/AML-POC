@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADF-ML-POC"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"RestService1_password": {
+			"value": ""
+		},
+		"RestService2_password": {
+			"value": ""
+		},
+		"SQLdblinkedservice_connectionString": {
+			"value": ""
+		},
+		"RestService1_properties_typeProperties_url": {
+			"value": "http://40.117.44.126:8000/v1/documents?uri=/binary/sampleDoc"
+		},
+		"RestService1_properties_typeProperties_userName": {
+			"value": "admin"
+		},
+		"RestService2_properties_typeProperties_url": {
+			"value": "http://20.193.229.230:8000/v1/documents?uri=/binary/sampleTestDoc"
+		},
+		"RestService2_properties_typeProperties_userName": {
+			"value": "admin"
+		},
+		"azurepoctrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/4d31b354-b40a-431b-8f85-822d19c3d7da/resourceGroups/ml-poc/providers/Microsoft.Storage/storageAccounts/mlpoc"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/4d31b354-b40a-431b-8f85-822d19c3d7da/resourceGroups/ml-poc/providers/Microsoft.Storage/storageAccounts/mlpoc"
+		},
+		"integrationRuntime2_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint": {
+			"value": "ortambo.database.windows.net"
+		},
+		"integrationRuntime2_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminUserName": {
+			"value": "sanchitBora"
+		},
+		"integrationRuntime2_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
+			"value": ""
+		}
+	}
+}
