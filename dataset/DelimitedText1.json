@@ -11,7 +11,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"container": "mlpocblob"
+				"fileName": "employee.csv",
+				"container": "poc-data"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
